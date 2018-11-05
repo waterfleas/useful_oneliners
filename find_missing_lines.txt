@@ -1,0 +1,1 @@
+awk 'NR == FNR {x[$0] = 1; next} !($0 in x) {print}' FILE1 FILE2 > $outfile
