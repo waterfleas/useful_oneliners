@@ -6,9 +6,9 @@ There is a known issue with openmp and clang when installing from source on maco
 
 1. brew install llvm
 
-2.  cat << EOF >> ~/.R/Makevars
-LLVM_VERS="10.0.0_3"
-GCC_VERS="10.1.0"
+2.  cat << EOF >> ~/.R/Makevars   
+GCC_VERS="10.1.0"  
+LLVM_VERS="10.0.0_3"  
 CC=/usr/local/Cellar/llvm/${LLVM_VERS}/bin/clang  
 CXX=/usr/local/Cellar/llvm/${LLVM_VERS}/bin/clang++  
 CXX1X=/usr/local/Cellar/llvm/${LLVM_VERS}/bin/clang++  
